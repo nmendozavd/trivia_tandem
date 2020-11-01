@@ -21,8 +21,11 @@ JSON file.
 
 * I utilized `create-react-app` to implement my Trivia app
 * In order to meet acceptance criteria:
-..* I implemented a shuffle function to randmonly select and not repeat questions in a round
-..* I implemented an alert box to display correct answer and properly updates score by utilizing a check answer function
+    * I implemented a shuffle function to randmonly select and not repeat questions in a round
+    * I implemented an alert box to display the correct answer and properly updates score by utilizing a check answer function
+    * If user selects correct answer, next question is presented
+    * User only sees final score when a round is complete
+
 
 ## Testing
 
