@@ -7,8 +7,9 @@ test("renders without crashing", () => {
   render(<Score />, div);
 });
 
-test("renders correct question count", () => {
+test("renders correct score message when game is finished", () => {
   const score = 2;
   const { getByText } = render(<Score score={ score } />);
   expect(getByText(`You scored ${ score } out of 10`)).toBeInTheDocument();
 });
+
