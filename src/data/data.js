@@ -1,4 +1,4 @@
-export const triviaData = [
+const triviaData = [
   {
     "question": "What was Tandem previous name?",
     "answers": ["Tandem", "Burger Shack", "Extraordinary Humans", "Devmynd"],
@@ -111,3 +111,5 @@ export const triviaData = [
     "correct": "Perform transactions in Latin"
   }
 ]
+
+export default triviaData;
