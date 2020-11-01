@@ -1,7 +1,8 @@
 import React from 'react';
-import { triviaData } from '../data/data.js';
+import triviaData from '../data/data.js';
 import Score from './Score.jsx'
 import Questions from './Questions.jsx'
+import Answers from './Answers.jsx'
 
 class App extends React.Component {
   constructor(props) {
@@ -17,7 +18,7 @@ class App extends React.Component {
     this.answerButton = this.answerButton.bind(this);
     this.checkAnswer = this.checkAnswer.bind(this);
   }
-  // mount shuffleQuestions method to populate first question
+  // mount shuffleQuestions method to populate first question to state
   componentDidMount() {
     this.shuffleQuestions();
   }
@@ -58,7 +59,7 @@ class App extends React.Component {
         count: this.state.count + 1,
         correct: triviaData[index].correct
       })
-    // otherwise, game is done, display score div to user
+    // otherwise, game is done, display score component to user
     } else {
       this.setState({
         showScore: true
@@ -86,16 +87,11 @@ class App extends React.Component {
   render() { 
     return (
       <div className='app'> 
-        { this.state.showScore ? (
-          <Score results = { this.state.score } />
-        ): (
-          <div>
-            <Questions question = { this.state.currentQuestion } triviaData = { triviaData }/>
-            <div className='answer-section'>
-              { triviaData[this.state.currentQuestion].answers.map((options, index) => (
-                <button onClick={this.answerButton} answer-id = { options }> { options }</button>
-              ))}
-            </div>
+        { this.state.showScore ? ( <Score results = { this.state.score } /> ): 
+        (
+          <div className = 'question-section'>
+            <Questions currentQuestion = { this.state.currentQuestion } triviaData = { triviaData } count = { this.state.count }/>
+            <Answers triviaData={triviaData} currentQuestion = {this.state.currentQuestion} answerButton = { this.answerButton }/>
           </div>
         )}
       </div>
