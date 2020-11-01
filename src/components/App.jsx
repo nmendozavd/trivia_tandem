@@ -1,6 +1,7 @@
 import React from 'react';
 import triviaData from '../data/data.js';
 import Score from './Score.jsx'
+import Count from './Count.jsx'
 import Questions from './Questions.jsx'
 import Answers from './Answers.jsx'
 
@@ -87,10 +88,11 @@ class App extends React.Component {
   render() { 
     return (
       <div className='app'> 
-        { this.state.showScore ? ( <Score results = { this.state.score } /> ): 
+        { this.state.showScore ? ( <Score score = { this.state.score } /> ): 
         (
           <div className = 'question-section'>
-            <Questions currentQuestion = { this.state.currentQuestion } triviaData = { triviaData } count = { this.state.count }/>
+            <Count count = {this.state.count} />
+            <Questions currentQuestion = { this.state.currentQuestion } triviaData = { triviaData } />
             <Answers triviaData={triviaData} currentQuestion = {this.state.currentQuestion} answerButton = { this.answerButton }/>
           </div>
         )}
