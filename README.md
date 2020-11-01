@@ -12,6 +12,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [x] We will provide you with the trivia data such as the questions, correct and incorrect answers via a
 JSON file.
 
+
 ## Acceptance Criteria
 
 - [x] A user can view questions.
