@@ -22,16 +22,22 @@ JSON file.
 * I utilized `create-react-app` to implement my Trivia app
 * In order to meet acceptance criteria:
     * I implemented a shuffle function to randmonly select and not repeat questions in a round
-    * I implemented an alert box to display the correct answer and properly updates score by utilizing a check answer function
+    * I implemented an alert box to display the correct answer and utilized a check answer function to update score
     * If user selects correct answer, next question is presented
     * User only sees final score when a round is complete
-
 
 ## Testing
 
 * A total of 9 tests with 5 suites were made using `JEST`
 * Every component has a corresponding test file (`App.jsx/App.test.jsx`)
 * You can run `npm test` to run the suite of tests
+
+## Additional Considerations
+
+If I had additiona time I would:
+* Implement further tests on individual functions that update state (`shuffleQuestions()`, `answerButton()`, `checkAnswer()`)
+* Implement reset button after a round is complete
+* Implement a modal pop-up to display correct answer
 
 ## How to run Code
 
