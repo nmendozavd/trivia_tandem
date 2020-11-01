@@ -1,6 +1,5 @@
 # 2020 Tandem Apprentice Software Engineer Code Challenge
 
-
 ## Assumptions
 - [x] A round of trivia has 10 Questions
 - [x] All questions are multiple-choice questions
@@ -8,7 +7,6 @@
 - [x] Results can update on form submit, button click, or any interaction you choose
 - [x] We will provide you with the trivia data such as the questions, correct and incorrect answers via a
 JSON file.
-
 
 ## Acceptance Criteria
 
@@ -18,6 +16,19 @@ JSON file.
 - [x] A user can select only 1 answer out of the 4 possible answers.
 - [x] The correct answer must be revealed after a user has submitted their answer
 - [x] A user can see the score they received at the end of the round
+
+## My Approach
+
+* I utilized `create-react-app` to implement my Trivia app. 
+* In order to meet acceptance criteria:
+* I implemented a shuffle function to randmonly select and not repeat questions in a round
+* I implemented an alert box to display correct answer and properly updates score by utilizing a check answer function
+
+## Testing
+
+* A total of 9 tests with 5 suites were made using JEST
+* Every component has a corresponding test file (`App.jsx/App.test.jsx`)
+* You can run `npm test` to run the suite of tests
 
 ## How to run Code
 
