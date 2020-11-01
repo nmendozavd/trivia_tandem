@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Questions = ({ question, triviaData }) => (
+const Questions = ({ currentQuestion, triviaData, count }) => (
   <div className='question-section'>
     <img src="tandem.png" />
-    { triviaData[question].question }
+    <div className='count-section'> Trivia Question: {count} of 10 </div>
+    <div> {triviaData[currentQuestion].question} </div>
   </div>
 );
 
