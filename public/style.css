@@ -44,7 +44,7 @@ img {
 }
 
 .question-section {
-  padding-top: 20px;
+  padding-bottom: 10px;
   width: 100%;
   position: center;
   text-align: center;
@@ -55,6 +55,13 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.count-section {
+  color: #fee001;
+  font-style: italic;
+  padding-bottom: 5px;
+  font-size: smaller;
 }
 
 button {
@@ -83,13 +90,3 @@ button svg {
   margin-right: 5px;
 }
 
-/* #alertBox {
-    position:relative;
-    width:300px;
-    min-height:100px;
-    margin-top:50px;
-    border:1px solid #666;
-    background-color:#fff;
-    background-repeat:no-repeat;
-    background-position:20px 30px;
-} */
