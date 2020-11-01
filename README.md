@@ -21,7 +21,6 @@ JSON file.
 - [x] The correct answer must be revealed after a user has submitted their answer
 - [x] A user can see the score they received at the end of the round
 
-
 ## Available Scripts
 
 In the project directory, you can run:
