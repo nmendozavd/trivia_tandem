@@ -39,7 +39,7 @@ If I had additiona time I would:
 * Implement reset button after a round is complete
 * Implement a modal pop-up to display correct answer
 
-## How to run Code
+## How to Run Code
 
 In the project directory, you can run:
 
