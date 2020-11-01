@@ -15,7 +15,7 @@ test("renders without crashing", () => {
   render(<Questions currentQuestion = { currentQuestion } triviaData = { triviaData }/>, div);
 });
 
-test("renders questions component", () => {
+test("renders correct questions", () => {
   let currentQuestion = 0;
   let triviaData = [ 
     {
