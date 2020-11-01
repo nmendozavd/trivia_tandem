@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Score = ({ results }) => (
+const Score = ({ score }) => (
   <div className='score-section'>
-    You scored { results } out of 10
+    <span>You scored { score } out of 10</span>
   </div>
 );
 
