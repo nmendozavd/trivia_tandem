@@ -15,4 +15,17 @@ test("renders without crashing", () => {
   render(<Questions currentQuestion = { currentQuestion } triviaData = { triviaData }/>, div);
 });
 
+test("renders questions component", () => {
+  let currentQuestion = 0;
+  let triviaData = [ 
+    {
+      "question": "What was Tandem previous name?",
+      "answers": ["Tandem", "Burger Shack", "Extraordinary Humans", "Devmynd"],
+      "correct": "Devmynd"
+    }
+  ]
+  const { getByText } = render(<Questions currentQuestion = { currentQuestion } triviaData = { triviaData }/>);
+  expect(getByText("What was Tandem previous name?")).toBeInTheDocument();
+});
+
 
